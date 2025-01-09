@@ -1,0 +1,48 @@
+#clockContainer {
+    position: relative;
+    border: 2px solid gold;
+    margin: auto;
+    height: 40vw; /* Same value for height and width to maintain aspect ratio */
+    width: 40vw;  /* Adjust this value as needed */
+    border-radius: 50%;
+    background: url('clock.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire container */
+}
+
+#hour, #minute, #second {
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    background-color: red;
+    height:25%;
+    width:2%;
+    top:25.5%;
+    left:49%;
+    opacity: 0.8;
+
+
+}
+
+#minute {
+    background-color:blue;
+    height:28%;
+    width:1.5%;
+    top:22.5%;
+    left:49.2%;
+    opacity: 0.8;
+    
+}
+
+
+#second {
+    background-color: green;
+    height:34%;
+    width:1%;
+    top:16.5%;
+    left:49.4%;
+    opacity: 0.8;
+}    
