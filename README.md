@@ -1,5 +1,5 @@
 # Responsive-Analog-Clock
-Preview link- https://htmlpreview.github.io/?https://github.com/amalverse/Responsive-Analog-Clock/blob/main/index.html
+Preview link- https://amalverse.github.io/Responsive-Analog-Clock/
 # Analog Clock -Using HTML,CSS,JS
 
 A simple analog clock created using HTML,CSS and JavaScript.
