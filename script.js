@@ -1,4 +1,3 @@
-let lastSecond = new Date().getSeconds();
 setInterval(() => {
     date = new Date();
     hTime = date.getHours();
@@ -12,12 +11,10 @@ setInterval(() => {
     minute.style.transform=`rotate(${mRotation}deg)`;
     second.style.transform=`rotate(${sRotation}deg)`;
 
-    // Play sound if the minute has changed
-    if (sTime !== lastSecond) {
-        sound.currentTime = 0; // rewind if still playing
-        sound.play();
-        lastSecond = sTime;
-    }
+}, 1000);
 
-
+setInterval(function() {
+  const audio = document.getElementById('tickSound');
+  audio.currentTime = 0; // rewind to start
+  audio.play();
 }, 1000);
